@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reels Gallery | DEWAN ENTERPRISE</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Gallery Section Layout */
+    .reels-section {
+      padding: 60px 6%;
+      min-height: 85vh;
+      background: var(--paper);
+    }
+    
+    .back-nav {
+      margin-bottom: 25px;
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    
+    .back-btn:hover {
+      color: var(--gold2);
+    }
+
+    /* Photos Grid */
+    .reels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    /* Thumbnail Card */
+    .reel-thumbnail-card {
+      position: relative;
+      display: block;
+      aspect-ratio: 4 / 5; /* Elegant portrait thumbnail ratio */
+      overflow: hidden;
+      background: #080808;
+      border: 1px solid var(--line);
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+
+    .reel-thumbnail-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    /* Hover Zoom on Photo */
+    .reel-thumbnail-card:hover img {
+      transform: scale(1.08);
+    }
+
+    /* Play Icon Overlay */
+    .play-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.75) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px;
+      transition: background 0.3s ease;
+    }
+
+    .play-icon-circle {
+      width: 52px;
+      height: 52px;
+      background: rgba(8, 8, 8, 0.85);
+      border: 1.5px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      align-self: center;
+      margin-top: auto;
+      margin-bottom: auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .reel-thumbnail-card:hover .play-icon-circle {
+      transform: scale(1.15);
+      background: var(--gold);
+      color: #080808;
+    }
+
+    /* Overlay Text */
+    .reel-info {
+      color: #fff;
+    }
+
+    .reel-info small {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .reel-info h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      margin: 6px 0 0;
+      color: #fff;
+    }
+
+    /* Navigation Button Base Style */
+.nav-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Yellow/Gold Hover Effect */
+.nav-btn:hover {
+  background: var(--gold);
+  color: #080808; /* Dark text on yellow background */
+  border-color: var(--gold);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="nav">
+    <a href="index - Copy.html" class="brand">
+      <img src="logo.png" alt="DEWAN ENTERPRISE" onerror="this.style.display='none'">
+    </a>
+    <a href="index - Copy.html" class="nav-btn">BACK TO HOME</a>
+  </header>
+
+  <!-- Main Showcase -->
+  <main class="reels-section">
+    <div class="back-nav">
+      <a href="index - Copy.html" class="back-btn">&larr; Back to Main Website</a>
+    </div>
+
+    <p class="eyebrow bold-eyebrow">FACEBOOK REELS GALLERY</p>
+    <h2>Watch Our Collections in Action</h2>
+
+    <!-- Photo Thumbnails Grid -->
+    <div class="reels-grid">
+
+      <!-- Thumbnail 1 -->
+      <a href="https://www.facebook.com/share/r/1W9ukkScLd/" target="_blank" class="reel-thumbnail-card">
+        <img src="reel-thumb-1.png" alt="GHAZI Vaila Collection">
+        <div class="play-overlay">
+          <div class="play-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="reel-info">
+            <small>ROOMI FABRICS</small>
+            <h3>ALSAFA</h3>
+          </div>
+        </div>
+      </a>
+
+      
+      <!-- Thumbnail 3 -->
+      <a href="https://www.facebook.com/share/r/1YKtdyihYy/" target="_blank" class="reel-thumbnail-card">
+        <img src="reel-thumb-3.png" alt="Jackpot Shirting">
+        <div class="play-overlay">
+          <div class="play-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="reel-info">
+            <small>ROOMI FABRICS</small>
+            <h3>ZAFRAN</h3>
+          </div>
+        </div>
+      </a>
+
+      
+      <!-- Thumbnail 5 -->
+      <a href="https://www.facebook.com/share/r/1Egt7aFXz2/" target="_blank" class="reel-thumbnail-card">
+        <img src="reel-thumb-5.png" alt="JACQUARD DES-12">
+        <div class="play-overlay">
+          <div class="play-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="reel-info">
+            <small>ROOMI FABRICS - GREECE</small>
+            <h3>JACQUARD DES-12</h3>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thumbnail 2 -->
+      <a href="https://www.facebook.com/share/r/18rnhng2ub/" target="_blank" class="reel-thumbnail-card">
+        <img src="reel-thumb-2.png" alt="JACQUARD DES-13">
+        <div class="play-overlay">
+          <div class="play-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="reel-info">
+            <small>ROOMI FABRICS - GREECE</small>
+            <h3>JACQUARD DES-13</h3>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thumbnail 4 -->
+      <a href="https://www.facebook.com/share/r/18gEwn4Pyk/" target="_blank" class="reel-thumbnail-card">
+        <img src="reel-thumb-4.png" alt="JACQUARD DES-15">
+        <div class="play-overlay">
+          <div class="play-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="reel-info">
+            <small>ROOMI FABRICS - GREECE</small>
+            <h3>JACQUARD DES-15</h3>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thumbnail 6 -->
+      <a href="https://www.facebook.com/share/r/18gEwn4Pyk/" target="_blank" class="reel-thumbnail-card">
+        <img src="reel-thumb-6.png" alt="Multi Vaila">
+        <div class="play-overlay">
+          <div class="play-icon-circle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div class="reel-info">
+            <small>GHAZI FABRICS</small>
+            <h3>Multi Vaila</h3>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; DEWAN ENTERPRISE. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

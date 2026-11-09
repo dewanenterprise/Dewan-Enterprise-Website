@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collection Photo Album | DEWAN ENTERPRISE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .photo-gallery-section {
+    padding: 80px 6%;
+    background: var(--paper);
+    min-height: calc(100vh - 200px);
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .photo-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  .photo-card:hover {
+    transform: translateY(-4px);
+  }
+  .photo-container {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    background: #c4b39e;
+  }
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .photo-card:hover .photo-container img {
+    transform: scale(1.05);
+  }
+  .photo-info {
+    padding: 20px;
+  }
+  .photo-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+  .photo-info p {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0;
+  }
+  @media(max-width: 850px) {
+    .photo-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media(max-width: 520px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html"><img src="dewan-logo.png" alt="Dewan Enterprise" style="height: 180px;"></a>
+  <nav>
+    <a href="index.html#about">About</a>
+    <a href="index.html#brands">Brands</a>
+    <a href="index.html#collections">Collections</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#locations">Locations</a>
+  </nav>
+  <a class="nav-btn women-btn" href="index.html#contact">Wholesale Inquiry</a>
+  <button class="menu" aria-label="Open menu">☰</button>
+</header>
+
+<main class="photo-gallery-section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">DEWAN ENTERPRISE</p>
+      <h2>Feel the Texture, See the Quality</h2>
+    </div>
+    <p>Explore high-resolution previews of our latest incoming stock and exclusive Pakistani textile collections.</p>
+  </div>
+
+  <div class="photo-grid">
+
+
+    <a href="https://www.facebook.com/share/p/1GxtsASLrL/" target="_blank" rel="noopener" class="photo-card-link">
+  <div class="photo-card">
+    <div class="photo-container">
+      <img src="greece des 15.png" alt="Vaila Collection">
+    </div>
+    <div class="photo-info">
+      <h3>GREECE - ROOMI FABRICS</h3>
+      <p><b>JACQUARD DES 15 FABRICS</b> (Click Here to View)</p>
+    </div>
+  </div>
+</a>
+
+         <!-- Photo Item 1 -->
+<a href="https://www.facebook.com/share/p/1GxtsASLrL/" target="_blank" rel="noopener" class="photo-card-link">
+  <div class="photo-card">
+    <div class="photo-container">
+      <img src="greece des 13.png" alt="Vaila Collection">
+    </div>
+    <div class="photo-info">
+      <h3>GREECE - ROOMI FABRICS</h3>
+      <p><b>JACQUARD DES 13 FABRICS</b> (Click Here to View)</p>
+    </div>
+  </div>
+</a>
+
+     <!-- Photo Item 1 -->
+<a href="https://www.facebook.com/share/p/1DWTEoLNBA/" target="_blank" rel="noopener" class="photo-card-link">
+  <div class="photo-card">
+    <div class="photo-container">
+      <img src="interpool.png" alt="Vaila Collection">
+    </div>
+    <div class="photo-info">
+      <h3>INTERPOOL - ROOMI FABRICS</h3>
+      <p>Click Here to View</p>
+    </div>
+  </div>
+</a>
+
+     <!-- Photo Item 1 -->
+<a href="https://www.facebook.com/share/p/1DWTEoLNBA/" target="_blank" rel="noopener" class="photo-card-link">
+  <div class="photo-card">
+    <div class="photo-container">
+      <img src="cocktail.png" alt="Vaila Collection">
+    </div>
+    <div class="photo-info">
+      <h3>COCKTAIL - ROOMI FABRICS</h3>
+      <p>Click Here to View</p>
+    </div>
+  </div>
+</a>
+
+
+    <!-- Photo Item 1 -->
+<a href="https://www.facebook.com/share/p/19i4uq1xw4/" target="_blank" rel="noopener" class="photo-card-link">
+  <div class="photo-card">
+    <div class="photo-container">
+      <img src="zafran.png" alt="Vaila Collection">
+    </div>
+    <div class="photo-info">
+      <h3>ZAFRAN - ROOMI FABRICS</h3>
+      <p>Click Here to View</p>
+    </div>
+  </div>
+</a>
+
+    <!-- Photo Item 1 -->
+<a href="https://www.facebook.com/share/p/1QkZ2835zs/" target="_blank" rel="noopener" class="photo-card-link">
+  <div class="photo-card">
+    <div class="photo-container">
+      <img src="Vaila 13.png" alt="Vaila Collection">
+    </div>
+    <div class="photo-info">
+      <h3>MULTI VAILA - GHAZI</h3>
+      <p>Click Here to View</p>
+    </div>
+  </div>
+</a>
+    <!-- Photo Item 2 -->
+<a href="https://www.facebook.com/share/p/1Dug1Wk8YZ/" target="_blank" rel="noopener" class="photo-card-link">     
+    <div class="photo-card">
+      <div class="photo-container">
+        <img src="Pearl 7.png" alt="Pearl Shirting">
+      </div>
+      <div class="photo-info">
+        <h3>Pearl Shirting - UP TIME</h3>
+        <p>Click Here to View</p>
+      </div>
+    </div>
+</a>    
+
+
+    <!-- Photo Item 3 -->
+<a href="https://www.facebook.com/share/p/1CEDGUFzSy/" target="_blank" rel="noopener" class="photo-card-link">    
+    <div class="photo-card">
+      <div class="photo-container">
+        <img src="jackpot.jpg" alt="Jackpot Shirting">
+      </div>
+      <div class="photo-info">
+        <h3>Jackpot Shirting - UPTIME</h3>
+        <p>Click Here to View</p>
+      </div>
+    </div>
+</a>  
+
+
+    <!-- Photo Item 4 -->
+<a href="https://www.facebook.com/share/p/1EqZQXg1Lo/" target="_blank" rel="noopener" class="photo-card-link">  
+    <div class="photo-card">
+      <div class="photo-container">
+        <img src="Vocal.jpg" alt="Vocal Shirting">
+      </div>
+      <div class="photo-info">
+        <h3>Vocal Shirting - UPTIME</h3>
+        <p>Click Here to View</p>
+      </div>
+    </div>
+</a> 
+
+
+    <!-- Photo Item 5 -->
+<a href="https://www.facebook.com/share/p/1DpawPAc8u/" target="_blank" rel="noopener" class="photo-card-link">
+    <div class="photo-card">
+      <div class="photo-container">
+        <img src="vs 7.png" alt="Vision Shirting">
+      </div>
+      <div class="photo-info">
+        <h3>Vision Shirting - UPTIME</h3>
+        <p>Click Here to View</p>
+      </div>
+    </div>
+</a>  
+
+
+    <!-- Photo Item 6 -->
+<a href="https://www.facebook.com/share/p/19mMLnE2Tw/" target="_blank" rel="noopener" class="photo-card-link">   
+    <div class="photo-card">
+      <div class="photo-container">
+        <img src="tiptop.jpg" alt="Tiptop Shirting">
+      </div>
+      <div class="photo-info">
+        <h3>Tiptop Shirting - UPTIME</h3>
+        <p>Click Here to View</p>
+      </div>
+    </div>
+</a>      
+  </div>
+</main>
+
+<footer>
+  <div class="footer-brand"><img src="dewan-logo.png" alt="Dewan Enterprise" style="width: 220px;"></div>
+  <p>Authentic Pakistani Fabrics · Wholesale & Distribution · <a href="index.html#locations">Our Locations</a></p>
+  <p>© Dewan Enterprise. All rights reserved.</p>
+</footer>
+
+<script>
+const menu=document.querySelector(".menu"), nav=document.querySelector("nav");
+menu.addEventListener("click",()=>nav.classList.toggle("open"));
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+</script>
+</body>
+</html>
